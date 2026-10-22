@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <title>Vitalis</title>
+</head>
+
+<body class="bg-light">
+    <div class="container-fluid">
+        <div class="row min-vh-100">
+            <aside class="col-12 col-md-3 col-lg-2 bg-dark text-white p-3">
+                <div class="d-flex align-items-center mb-4">
+                    <i class="bi bi-prescription2 fs-3 text-success me-2"></i>
+                    <h1 class="h4 mb-0">Vitalis</h1>
+                </div>
+                <nav class="nav text-success gap-2">
+                    <a class="nav-link text-white" href="home.html">
+                        <i class="bi bi-person me-2"></i>
+                        Início
+                    </a>
+
+                    <a class="nav-link text-white bg-success border-0 shadow-sm rounded-5 w-100" href="pacientes.html">
+                        <i class="bi bi-person me-2"></i>
+                        Pacientes
+                    </a>
+
+                    <a class="nav-link text-white" href="medicos.html">
+                        <i class="bi bi-heart-pulse-fill me-2"></i>
+                        Médicos
+                    </a>
+
+                    <a class="nav-link text-white border-0 shadow-sm rounded-5 w-100" href="consultas.html">
+                        <i class="bi bi-journal-medical me-2"></i>
+                        Consultas
+                    </a>
+                    
+                </nav>
+                <hr class="border-secondary">
+                <a href="login.html" class="btn btn-outline-light w-100 mt-3">
+                    <i class="bi bi-box-arrow-left me-2"></i>
+                    Sair
+                </a>
+            </aside>
+            <main class="col-12 col-md-9 col-lg-10 p-0">
+                <header class="navbar bg-white border-bottom px-4 py-3">
+                    <div>
+                        <h2 class="h5 mb-0">Cadastro de Paciente</h2>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-person-circle fs-4 text-success me-2"></i>
+                        <span>Ícaro Souza</span>
+                    </div>
+                </header>
+                <div class="p-4">
+                    <section class="mb-4">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <a href="pacientes.html" class="btn btn-outline-success d-flex justify-content-start rounded-2">
+                                    <i class="bi bi-arrow-left ">Voltar</i>
+                                </a>
+                                <h5 class="card-title">Você está editando os dados do paciente...</h5>
+                                <form action="" method="POST">
+                                    <div class="row p-4">
+                                        <div class="col-12 ">
+                                            <label for="paciente" class="form-label">Nome do Paciente</label>
+                                                <input class="form-control w-100" id="paciente" name="paciente" placeholder="Digite o nome do paciente...">
+                                                <label for="cpf" class="form-label">CPF do Paciente</label>
+                                                <input class="form-control w-100" id="cpf" name="cpf" placeholder="Digite o cpf do paciente...">     
+                                                <label for="telefone" class="form-label">Telefone do Paciente</label>
+                                                <input class="form-control" id="telefone" name="telefone" placeholder="Digite o telefone do paciente...">       
+                                                <input type="hidden" name="pessoa_tipo_id" value="1">
+                                        </div>
+                                        <div class="col-12 col-md-12 w-100">
+                                            <div class="row">
+                                                <div class="col-12 col-md-12">
+                                                    <label for="data" class="form-label">Data de Nascimento</label>
+                                                    <input type="date" class="form-control " id="data" name="data">
+                                                </div>
+                                                <div class="col-12 p-4 d-flex justify-content-end gap-2">
+                                                    <a class="btn btn-outline-danger " href="pacientes.html">Cancelar</a>
+                                                    <button type="submit" class="btn btn-success ">Adicionar Paciente</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
